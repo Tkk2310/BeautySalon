@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="16px" height="16px" viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+<title>coin-dollar</title>
+<path d="M7.5,1C3.358,1,0,4.358,0,8.5C0,12.643,3.358,16,7.5,16c4.143,0,7.5-3.357,7.5-7.5C15,4.358,11.643,1,7.5,1z M7.5,14.5
+	c-3.314,0-6-2.686-6-6c0-3.314,2.686-6,6-6c3.314,0,6,2.686,6,6C13.5,11.814,10.814,14.5,7.5,14.5z"/>
+<rect x="2.793" y="4.27" fill="none" width="12.207" height="9.523"/>
+<text transform="matrix(1 0 0 1 2.793 12.0801)" font-family="'MyriadPro-Regular'" font-size="11">Kr</text>
+</svg>

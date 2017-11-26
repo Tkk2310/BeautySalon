@@ -1,0 +1,28 @@
+{%extends "salon/base.html" %}
+
+{%block body%}
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'salon/employees.css' %}" />
+
+<script type="text/javascript">
+    $('#menu_employees').addClass('active');
+</script>
+
+<ul id="employeeList">
+{%for employee in employees%}
+
+    <li>
+        <div class="col-fluid">
+            <div class="imgWrapper">
+                <img src="{{employee.picture.url}}"/>
+            </div>
+            <div class="employeeInfo">
+                <h3>{{employee.name}}</h3>
+                <p>{{employee.description}}</p>
+            </div>
+        </div>
+    </li>
+{%endfor%}
+</ul>
+
+{%endblock%}

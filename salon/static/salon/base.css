@@ -1,0 +1,128 @@
+html, body{
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    background: #e8e3e3;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: normal;
+    /*
+    font-family: 'Satisfy', cursive;
+    font-family: 'Kalam', cursive;
+    font-family: 'Tangerine', cursive;
+    */
+}
+
+header{
+    background: url('imgs/HeaderBackground.jpg');
+    height: 590px;
+}
+
+.navbar-toggle .icon-bar{
+    background: white;
+}
+
+
+.navLink.active{
+    color: white;
+    font-weight: 400;
+}
+
+
+.affix {
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+.affix + .container-fluid {
+    padding-top: 0px;
+}
+
+nav a{
+    color: white;
+    font-size: 18px;
+}
+
+.nav>li>a:focus, .nav>li>a:hover{
+    background-color: transparent;
+    color: white;
+}
+
+
+#mainContent{
+    padding: 20px 10px; 
+    min-height: 800px;
+    max-width: 1280px;
+    min-width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+    background: white;
+}
+
+#mainContent:after { 
+   content: " ";
+   display: block; 
+   height: 0; 
+   clear: both;
+}
+
+footer{
+    min-width: 550px;
+    background-color: #222;
+    height: 200px;
+    color: #9d9d9d;
+    padding: 10px;
+    clear: both;
+}
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+
+#footerConent{
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+#ContactInfo{
+    float: left;
+    text-align: left;
+}
+
+#Times{
+    float: right;
+    text-align: right;
+
+}
+
+#ContactInfo .svg {
+    fill: #9d9d9d;
+    margin-right: 5px;
+    height: 20px;
+}
+
+@media (max-width: 1199px){
+    footer{
+        height: auto;
+        width: 100%;
+    }
+
+    #ContactInfo{
+        float: none;
+        text-align: center;
+    }
+
+    #Times{
+        float: none;
+        text-align: center;
+
+    }
+}

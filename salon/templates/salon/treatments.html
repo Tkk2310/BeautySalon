@@ -1,0 +1,40 @@
+{%extends "salon/base.html" %}
+
+{%block body%}
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'salon/treatments.css' %}" />
+
+<script type="text/javascript">
+    $('#menu_treatments').addClass('active');
+</script>
+
+<div id="treatmentTypesContainer">
+    <div id="treatmentTypesList" >
+        <div class="active treatmentType" id="0">Allar meðferðir</div>
+        {%for item in treatmentTypes%}
+            <div class="treatmentType" id="{{item.id}}">{{item.label}}</div>
+        {%endfor%}
+    </div>
+</div>
+
+{% include 'salon/treatmentList.html' %}
+
+<script type="text/javascript">
+    $('#treatmentTypesList div').click(function(){
+        $('#treatmentTypesList div').removeClass('active');
+        $(this).addClass('active');
+        $.ajax({
+            type: 'GET',
+            url: '.',
+            data: {
+                'treatmentType' : this.id
+            },
+            success: function (data) {
+                $('#treatmentsContainer ').replaceWith(data);
+            }
+        })
+    });
+
+</script>
+{%endblock%}

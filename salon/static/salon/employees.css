@@ -1,0 +1,22 @@
+#employeeList{
+    list-style: none;
+}
+
+#employeeList li{
+    margin-bottom: 10px;
+}
+.imgWrapper{
+    width: auto;
+    margin: 0;
+    display: inline-block;
+}
+.imgWrapper img{
+    height: 200px;
+}
+.employeeInfo{
+    width: auto;
+    padding-left: 15px;
+    display: inline-block;
+}
+
+

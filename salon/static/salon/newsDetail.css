@@ -1,0 +1,14 @@
+#title{
+    text-align: center;
+    font-size: 56px;
+}
+
+#bsLine{
+    width: 30%;
+    min-width: 250px;
+    margin-bottom: 50px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}

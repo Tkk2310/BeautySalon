@@ -1,0 +1,38 @@
+{%extends "salon/base.html" %}
+
+{%block body%}
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'salon/index.css' %}" />
+
+<script type="text/javascript">
+    $('#menu_home').addClass('active');
+</script>
+
+<div id="mainstoryContainer" class="col-lg-8 col-sm-12">
+    <h2>{{news.first.title|safe}}</h2>
+    <div class="container-fluid">
+        <img id="bsLine" src="{% static 'salon/imgs/bsLine.svg' %}">
+    </div>
+    
+    <div id="mainStoryContent">{{news.first.content|safe}}</div>
+</div>
+
+<div id="olderStories" class="col-lg-4 col-sm-12">
+    <ul id="newsList" >
+        {%for story in news%}
+            {%if forloop.first%}
+
+            {% else %}
+                <li class="newsItem">
+                    <h4>{{story.title|safe}}</h4>
+                    <div class="storyContent">{{story.content|safe}}</div>
+                    <a href="{% url 'newsDetail' story.id %}"><p class="readMoreButton"><span class="readMoreLabel">Lesa meira</span></p></a>
+                </li>
+            {% endif %}
+
+
+        {%endfor%}
+
+    </ul>
+</div>
+{%endblock%}

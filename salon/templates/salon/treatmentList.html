@@ -1,0 +1,25 @@
+
+{% load static %}
+{% load humanize %}
+<div id="treatmentsContainer">
+    <ul id="treatmentList">
+        {%for treatment in treatments%}
+            <li>
+                <div class="treatmentItem">
+                    <div class="treatmentTitle">
+                        <h3>{{treatment.title}}</h3>
+                    </div>
+                    <div class="treatmentInfo">
+                        verð : {{treatment.price|floatformat:0|intcomma}} Kr. | lengd : {{treatment.length}} mín | tegund : {{treatment.treatmentType}}
+                    </div>
+                    <div class="treatmentDescription">
+                        <p>{{treatment.description}}</p>
+                    </div>
+                </div>
+            </li>
+
+            {%empty%}
+                <p>Því miður þá eru engar meðferðir af þessari tegund</p>
+        {%endfor%}
+    </ul>
+</div>
